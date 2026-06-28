@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <script>
+//     function getRandomInt(max) {
+//   return Math.floor(Math.random() * 32);
+// }
+// const solution=getRandomInt(32);
+
+// function isReigth(n){
+//   return n===solution;
+// }
+
+
+// function guess(){
+//    const number=prompt("Enter a number between 0 and 31:")*1;
+
+//     return isReigth(number);
+//     }
+//     for(i=0;i<3;i++){
+//       if(guess()){
+//         alert("VOUS avez gagné!");
+//         break;
+//       }else{
+//         alert("Mauvais numéro, essayez encore!");
+//       }
+//     }
+
+// function isPalindrome(word){
+//     const reversed = word
+//     .split('')
+//     .reverse()
+//     .join('');
+//     console.log(reversed);
+//     return word.toUpperCase() === reversed.toUpperCase();
+//     console.log(reversed)
+// }
+
+// const words = {
+//     kayak: true,
+//     hello: false,
+//     level: true,
+//     world: false,
+//     racecar: true,
+//     SOS: true
+// };
+
+// for (let w in words){
+//     if (isPalindrome(w) !== words[w]){
+//         console.error(`Test failed for word: ${w}`);
+//     }else{
+//         console.log(`Test passed for word: ${w}`);
+//     }
+// }
+// const students = [
+//     {
+//         name: 'John',
+//         notes: [1, 20, 18, 19, 12]
+//     },
+//     {
+//         name: 'Jane',
+//         notes: [17, 18, 20, 13, 15]
+//     },
+//     {
+//         name: 'Sophie',
+//         notes: [17, 12, 14, 15, 13]
+//     },
+//     {
+//         name: 'Marc',
+//         notes: [2, 3, 5, 8, 9]
+//     },
+//     {
+//         name: 'Manon',
+//         notes: [18, 17, 18, 19, 12]
+//     }
+// ];
+// const moyenne=(notes)=>{
+//     let sun = 0;
+//     for(let note of notes){
+//         sun += note
+//     }
+//     return sun/notes.length;
+// } 
+// const compareStudent=(a,b)=>{
+//     return moyenne(b.notes)-moyenne(a.notes);
+// }
+// for(let student of students){
+//     student.moyenne = moyenne(student.notes);
+//     student.worstNote = Math.min(...student.notes);
+//     student.bestNote = Math.max(...student.notes);
+//     // console.log(`La moyenne de ${student.name} est de ${moyenne(student.notes)}`);
+// }
+// students.sort(compareStudent);
+// console.log(students);
+// const formatStudent=(student)=>{
+//     return `La moyenne de ${student.name} est de ${student.moyenne}, sa meilleure note est de ${student.bestNote} et sa pire note est de ${student.worstNote}`;
+// }
+// //  console.log('Top 3 des étudiants:');
+// console.log('Top 3 des étudiants:');
+// for (let i = 0; i < 3; i++) {
+//     console.log(`${i + 1}: ${formatStudent(students[i])}`);
+// } 
+
+// const phrase = `Vous savez, moi je ne crois pas qu’il y ait de bonne ou de mauvaise situation. Moi, si je devais résumer ma vie aujourd’hui avec vous, je dirais que c’est d’abord des rencontres.`
+// const frequency = {};
+// const words = phrase
+// .toLowerCase()
+// .replaceAll(',', '')
+// .replaceAll('’', '')
+// .replaceAll('.', '')
+// .replaceAll('!', '')
+// .replaceAll('?', '')
+// .replaceAll('<', '')
+// .split(' ');
+// console.log(words);
+// for (let word of words) {
+//     if(word === '') {
+//         if(frequency[word] ) {
+//          frequency[word] += 1;
+//     } else {
+//          frequency[word] = 1;
+//    }
+
+//     }
+// }
+
+// function cookie(x){
+//   return typeof x === "string"
+//   ? "Who ate the last cookie? It was Zach!"
+//   : typeof x === "number"
+//       ? "Who ate the last cookie? It was Monica!"
+//       : "Who ate the last cookie? It was the dog!";
+// }
+// cookie(24);
+
+// function rgb(r, g, b) {
+    // function toHex(n) {
+    //   if (n < 0) n = 0;
+    //   if (n > 255) n = 255;
+    //   return n.toString(16).toUpperCase().padStart(2, '0');
+    // }
+
+    // return toHex(r) + toHex(g) + toHex(b)  ;
+//    const s=n=> Math.max(0, Math.min(255, n)).toString(16).toUpperCase().padStart(2, '0');
+//     return s(r) + s(g) + s(b) ;
+// function moveZeroes(arr) {
+//     const result = [];
+//     let zeroCount = 0;
+//     const num = 0;
+//     for ( num of arr) {
+//         if (num === 0) {
+//             zeroCount++;
+//         } else {
+//             result.push(num);
+//         }
+//     }
+//     while (zeroCount > 0) {
+//         result.push(0);
+//         zeroCount--;
+//     }
+
+//    var moveZeros = function (arr) {
+//   return [
+//     ...(arr.filter(n => n !== 0)),
+//     ...(arr.filter(n => n === 0))
+//   ];
+// } return result;
+// console.log(towerBuilder(6));
+//  function towerBuilder(nFloors) {
+//  switch (nFloors) {
+//     case 1:
+//         return ['*'];
+//     case 2:
+//         return [' * ', '***'];
+//     case 3:
+//         return ['  *  ', ' *** ', '*****'];
+//     case 4:
+//         return ['   *   ', '  ***  ', ' ***** ', '*******'];
+//     case 5:
+//         return ['    *    ', '   ***   ', '  *****  ', ' ******* ', '*********'];
+//     case 6:
+//         return ['     *     ', '    ***    ', '   *****   ', '  *******  ', ' ********* ', '***********'];
+//     case 7:
+//         return ['      *      ', '     ***     ', '    *****    ', '   *******   ', '  *********  ', ' *********** ', '*************'];
+//  }
+// }
+// 
+// function isPremier(n) {
+//    if(n<2) return false;
+//    for(let i=n-1; i>1; i--){
+//       if(n%i===0) return false;
+//    }
+//    return true;
+// }
+// console.log(isPremier(7)); // true
+// console.log(isPremier(10)); // false
+</script>
+  </head>
+<body>
+    
+</body>
+</html>
